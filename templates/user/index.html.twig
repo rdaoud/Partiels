@@ -1,0 +1,8 @@
+{% block body %}
+<h1>Utilisateurs du site</h1>   
+<ul>
+{% for user in userList %}
+<li>{{ user.firstname }} {{ user.name|upper }} : {{ user.mail }} - {{ user.role }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
