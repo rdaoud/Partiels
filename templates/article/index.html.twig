@@ -1,0 +1,8 @@
+{% block body %}
+<h1>Utilisateurs du site</h1>   
+<ul>
+{% for article in articleList %}
+<li>{{ article.title }} {{ article.author }} <a href ="{{ path("article_profile", {id: article.id })}}">Modifier</a> <a href ="{{ path("delete_article", {id: article.id })}}">Supprimer</a> </li>
+{% endfor %}
+</ul>
+{% endblock %}
