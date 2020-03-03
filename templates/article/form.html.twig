@@ -1,5 +1,11 @@
+
+
 {% extends 'base.html.twig' %}
     {% block title %}Create User{% endblock %}
         {% block body %}
+        <a href = "user-list">Liste des utilisateurs</a>
+<a href = "article-list">Liste des articles</a>
+<a href = "/">Accueil</a>
+<br><br>
             {{ form(form) }}
         {% endblock %}

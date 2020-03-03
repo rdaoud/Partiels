@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+
+body{
+    margin: 0px;
+}
+.header{
+    color: black;
+    width: 100%;
+}
+
+.container{
+    display : flex; 
+    width: 100%
+}
+
+h1{
+    text-align: center; 
+    line-height: 100vh;
+}
+
+.user{
+    background-color: red; 
+    width: 50%;
+    height: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black; 
+    transition: 0.3s;
+}
+
+.article{
+    background-color: orange;
+    width: 50%;
+    height: 100%;
+}
+
+
+</style>
+
+<div class = "container">
+    <div class = "user">
+        <a href = "user-list"><h1 > Utilisateurs </h1></a>
+    </div>
+
+    <div class = "article">
+       <a href = "article-list"><h1 href = "article-list"> Articles </h1></a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

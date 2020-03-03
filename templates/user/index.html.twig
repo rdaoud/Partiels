@@ -1,5 +1,13 @@
+<a href = "user-list">Liste des utilisateurs</a>
+
+<a href = "article-list">Liste des articles</a>
+<a href = "/">Accueil</a>
 {% block body %}
-<h1>Utilisateurs du site</h1>   
+<h1>Utilisateurs du site</h1>  
+
+<br>
+<a href = "user-create">Créer un utilisateur</a>
+
 <ul>
 {% for user in userList %}
 <li>{{ user.firstname }} {{ user.name|upper }} : {{ user.mail }} - {{ user.role }} 
